@@ -6,8 +6,7 @@
         "piada": "./bin/piada"
     },
     "dependencies": {
-        "iconv-lite": "^0.4.11",
-        "node-html-encoder": "^0.0.2"
+        "iconv-lite": "^0.4.11"
     },
     "repository": {
         "type": "git",
