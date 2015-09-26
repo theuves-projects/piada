@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var http = require('http');
+var iconv = require('iconv-lite');
+var Encoder = require('node-html-encoder').Encoder;
+var encoder = new Encoder('entity');
+
+var callback = function(response) {
+    response.pipe(iconv.decodeStream('ISO-8859-1')).collect(function (error, body) {
+
+        var text;
+
+        text = body.replace(/^.*<p>|<\/p>/g, '');
+        text = text.trim();
+        text = text.replace(/<br\s\/>/g, '\n');
+        text = encoder.htmlDecode(text);
+
+        console.log(text);
+    });
+};
+
+http.request('http://www.xalexandre.com.br/piadasAleiatorias/', callback).end();

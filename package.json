@@ -1,0 +1,18 @@
+{
+    "name": "piada",
+    "version": "0.0.0",
+    "description": "Piadas Aleatórias via Linha de Comando.",
+    "bin": {
+        "piada": "./bin/piada"
+    },
+    "dependencies": {
+        "iconv-lite": "^0.4.11",
+        "node-html-encoder": "^0.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/theuves/piada.git"
+    },
+    "author": "Matheus Alves",
+    "license": "MIT"
+}
