@@ -5,17 +5,14 @@
 var http = require('http');
 var iconv = require('iconv-lite');
 
-var callback = function(response) {
+var callback = function (response) {
     response.pipe(iconv.decodeStream('ISO-8859-1')).collect(function (error, body) {
 
-        var text;
+        body = body.replace(/^.*<p>|\s*<\/p>$/g, '');
+        body = body.replace(/<br\s\/>/g, '\n');
+        body = body.replace(/&mdash;/g, '-');
 
-        text = body.replace(/^.*<p>|<\/p>/g, '');
-        text = text.trim();
-        text = text.replace(/<br\s\/>/g, '\n');
-        text = text.replace(/&mdash;/g, '-');
-
-        console.log(text);
+        console.log(body);
     });
 };
 
