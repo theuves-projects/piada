@@ -12,6 +12,10 @@
         "type": "git",
         "url": "git://github.com/theuves/piada.git"
     },
+    "keywords": [
+        "português",
+        "portuguese"
+    ],
     "author": "Matheus Alves",
     "license": "MIT"
 }
