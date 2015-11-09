@@ -17,9 +17,15 @@ var callback = function (response) {
     }
 
     response.pipe(iconv.decodeStream('ISO-8859-1')).collect(function (error, body) {
-        body = body.replace(/^.*<p>|\s*<\/p>$/g, '');
-        body = body.replace(/<br\s\/>/g, '\n');
-        body = body.replace(/&mdash;/g, '-');
+        if (error) {
+            console.error('Erro!');
+            process.exit(1);
+        }
+
+        body = body
+            .replace(/^.*<p>|\s*<\/p>$/g, '')
+            .replace(/<br\s\/>/g, '\n')
+            .replace(/&mdash;/g, '-');
 
         console.log(body);
     });
