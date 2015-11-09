@@ -25,4 +25,7 @@ var callback = function (response) {
     });
 };
 
-http.request(options, callback).end();
+http.request(options, callback).on('error', function () {
+    console.error('Serviço indisponível.');
+    process.exit(1);
+}).end();
