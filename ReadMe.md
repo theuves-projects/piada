@@ -1,6 +1,6 @@
 # [`piada`](http://npm.im/piada)
 
-*Piadas Aleatórias via Linha de Comando.*
+*Piadas aleatórias via linha de comando.*
 
 ```
  ____ ____ ____ ____ ____ 
