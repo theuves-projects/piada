@@ -1,6 +1,6 @@
 {
     "name": "piada",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Piadas aleatórias via linha de comando.",
     "bin": {
         "piada": "./bin/piada"
