@@ -1,6 +1,8 @@
-# [`piada`](http://npm.im/piada)
+# piada
 
-*Piadas aleatórias via linha de comando.*
+> Piadas aleatórias via linha de comando.
+
+*Todas as piadas são extraidas do site [xalexandre.com.br].*
 
 ```
  ____ ____ ____ ____ ____ 
@@ -17,11 +19,7 @@ $ npm install --global piada
 
 ## Uso
 
-```
-$ piada
-```
-
-**Exemplo:**
+Veja um exemplo:
 
 ```
 $ piada
@@ -36,3 +34,5 @@ O médico chega para um paciente e diz:
 ## Licença
 
 [MIT](http://theuves.mit-license.org/)
+
+[xalexandre.com.br]:http://www.xalexandre.com.br/piadasAleiatorias/
