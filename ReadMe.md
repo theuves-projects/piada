@@ -2,7 +2,7 @@
 
 > Piadas aleatórias via linha de comando.
 
-*Todas as piadas são extraidas do site [xalexandre.com.br].*
+*Todas as piadas são extraídas do site [xalexandre.com.br].*
 
 ```
  ____ ____ ____ ____ ____ 
