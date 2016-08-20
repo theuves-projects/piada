@@ -3,8 +3,8 @@
 'use strict';
 
 const options = {
-    host: 'www.xalexandre.com.br',
-    path: '/piadasAleiatorias/'
+    host: 'aspiadas.com',
+    path: '/randomjoke.php?l=pt'
 };
 
 const callback = response => {
@@ -22,9 +22,9 @@ const callback = response => {
         }
 
         body = body
-            .replace(/^.*<p>|\s*<\/p>$/g, '')
-            .replace(/<br\s\/>/g, '\n')
-            .replace(/&mdash;/g, '-');
+            .split('</table><p>')[1]
+            .split('</p><div align="center">')[0]
+            .replace(/\n?<br\s\/>/g, '');
 
         console.log(body);
     });
