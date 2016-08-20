@@ -4,14 +4,9 @@
 
 Todas as piadas são extraídas do *site* &lt;[http://aspiadas.com/](http://aspiadas.com/randomjoke.php)&gt;.
 
-```
- ____ ____ ____ ____ ____ 
-||p |||i |||a |||d |||a ||
-||__|||__|||__|||__|||__||
-|/__\|/__\|/__\|/__\|/__\|
-```
-
 ## Instalação
+
+Instale-o com o seguinte:
 
 ```
 $ npm install --global piada
@@ -23,12 +18,13 @@ Veja um exemplo:
 
 ```
 $ piada
-O médico chega para um paciente e diz:
-— Lamento lhe informar, mas o senhor vai morrer dentro de pouco tempo.
-— Oh, meu Deus! Que notícia terrível! Quanto tempo eu ainda tenho de vida?
-— Dez...
-— Dez, o quê, doutor? Dez meses? Dez semanas? Dez dias?
-— Nove... oito... sete...
+Um antropólogo vai visitar uma aldeia no meio da floresta amazônica.
+- Como você chegou até aqui? - pergunta-lhe uma índia curiosa.
+- Eu vim de helicóptero!
+- Helicóptero?! O que é isso?
+Ele tenta explicar de uma maneira bem simples:
+- É um negócio que levanta sozinho...
+- Ah! Eu sei... meu marido tem um helicóptero enorme!
 ```
 
 ## Licença
