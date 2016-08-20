@@ -4,7 +4,7 @@
 
 const options = {
     host: 'aspiadas.com',
-    path: '/randomjoke.php?l=pt'
+    path: '/randomjoke.php'
 };
 
 const callback = response => {
