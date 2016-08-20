@@ -1,6 +1,6 @@
 {
     "name": "piada",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Piadas aleatórias via linha de comando.",
     "bin": {
         "piada": "./bin/piada"
@@ -12,10 +12,6 @@
         "type": "git",
         "url": "git://github.com/theuves/piada.git"
     },
-    "keywords": [
-        "português",
-        "portuguese"
-    ],
     "author": "Matheus Alves",
     "license": "MIT"
 }
