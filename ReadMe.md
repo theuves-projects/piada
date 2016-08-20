@@ -2,7 +2,7 @@
 
 > Piadas aleatórias via linha de comando.
 
-*Todas as piadas são extraídas do site [xalexandre.com.br].*
+Todas as piadas são extraídas do *site* &lt;[http://aspiadas.com/](http://aspiadas.com/randomjoke.php)&gt;.
 
 ```
  ____ ____ ____ ____ ____ 
@@ -33,6 +33,4 @@ O médico chega para um paciente e diz:
 
 ## Licença
 
-[MIT](http://theuves.mit-license.org/)
-
-[xalexandre.com.br]:http://www.xalexandre.com.br/piadasAleiatorias/
+MIT &copy; [Matheus Alves](https://github.com/theuves)
