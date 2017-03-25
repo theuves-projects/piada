@@ -1,38 +1,31 @@
 #!/usr/bin/env node
+"use strict";
 
-'use strict';
+var http = require("http");
+var iconv = require("iconv-lite");
 
-const options = {
-    host: 'aspiadas.com',
-    path: '/randomjoke.php'
-};
-
-const callback = response => {
-    if (response.statusCode !== 200) {
-        console.error('Serviço indisponível.');
+http.request({
+  host: "aspiadas.com",
+  path: "/randomjoke.php"
+}, function (response) {
+  if (response.statusCode === 200) {
+    response.pipe(iconv.decodeStream("ISO-8859-1"))
+      .collect(function (error, body) {
+      if (error) {
+        console.error("Erro!");
         process.exit(1);
-    }
-
-    const iconv = require('iconv-lite');
-
-    response.pipe(iconv.decodeStream('ISO-8859-1')).collect(function (error, body) {
-        if (error) {
-            console.error('Erro!');
-            process.exit(1);
-        }
-
-        body = body
-            .split('</table><p>')[1]
-            .split('</p><div align="center">')[0]
-            .replace(/\n?<br\s\/>/g, '');
-
-        console.log(body);
+      } else {
+        console.log(body
+          .split("</table><p>")[1]
+          .split(/<\/p><div\salign="center">/)[0]
+          .replace(/\n?<br\s\/>/g, ""));
+      }
     });
-};
-
-const http = require('http');
-
-http.request(options, callback).on('error', function () {
-    console.error('Serviço indisponível.');
+  } else {
+    console.error("Serviço indisponível.");
     process.exit(1);
+  }
+}).on("error", function () {
+  console.error("Serviço indisponível.");
+  process.exit(1);
 }).end();
