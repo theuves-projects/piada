@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 "use strict";
 
+// piada | matheus alves
+// https://github.com/theuves/piada
+
 var http = require("http");
 var iconv = require("iconv-lite");
 
