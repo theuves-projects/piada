@@ -14,6 +14,8 @@ $ npm install --global piada
 
 ## Exemplo
 
+Não há parâmetros! Apenas use o comando `piada`.
+
 ```
 $ piada
 Um antropólogo vai visitar uma aldeia no meio da floresta amazônica.
