@@ -2,19 +2,17 @@
 
 > Piadas aleatórias via linha de comando.
 
-Todas as piadas são extraídas do *site* &lt;[http://aspiadas.com/](http://aspiadas.com/randomjoke.php)&gt;.
+:warning: Requer internet para funcionar.
+
+Todas as piadas são extraídas do site &lt;[http://aspiadas.com/](http://aspiadas.com/randomjoke.php)&gt;.
 
 ## Instalação
-
-Instale-o com o seguinte:
 
 ```
 $ npm install --global piada
 ```
 
-## Uso
-
-Veja um exemplo:
+## Exemplo
 
 ```
 $ piada
@@ -29,4 +27,4 @@ Ele tenta explicar de uma maneira bem simples:
 
 ## Licença
 
-MIT &copy; [Matheus Alves](https://github.com/theuves)
+MIT
